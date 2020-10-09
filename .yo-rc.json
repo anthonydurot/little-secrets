@@ -38,6 +38,16 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": ["en"],
-    "blueprints": []
+    "blueprints": [],
+    "appsFolders": ["little-secrets-new"],
+    "directoryPath": "../",
+    "dockerRepositoryName": "",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "littlesecrets",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "ingressDomain": "",
+    "monitoring": "no",
+    "istio": false
   }
 }

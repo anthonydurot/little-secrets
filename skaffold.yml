@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: littlesecrets
+      context: ../little-secrets-new
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}

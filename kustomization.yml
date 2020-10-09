@@ -1,0 +1,15 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: littlesecrets
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - littlesecrets-k8s/littlesecrets-deployment.yml
+  - littlesecrets-k8s/littlesecrets-service.yml
+  - littlesecrets-k8s/littlesecrets-mysql.yml
+  - littlesecrets-k8s/jwt-secret.yml
+# service discovery eureka/consul
+
+patchesJson6902:
