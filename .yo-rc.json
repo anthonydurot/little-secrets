@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "fr.anthonydurot.littlesecrets",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "littlesecrets",
+    "packageName": "fr.anthonydurot.littlesecrets",
+    "packageFolder": "fr/anthonydurot/littlesecrets",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjM5Mzg0ZDdjODJhODMwM2ViY2JkMzExMWVkNTkyOWVhMmQzOTU4NGI2NzIxZWZiMWI0M2VmMzAxZGYwMTA2YWJkNzAxYmE3ZTQ3NDExNzNiNjI1MDAzZWU0MTExNzZmYWQ1YjA5OWUyMmFiZTQyNjA5MGQ5MjY0NWNlMDVjNTE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1602248956586,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": []
+  }
+}
