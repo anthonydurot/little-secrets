@@ -1,7 +1,7 @@
 commonLabels:
   app.kubernetes.io/genereted-by: JHipster
 
-namespace: littlesecrets
+namespace: little-secrets
 
 resources:
   - namespace.yml
@@ -13,3 +13,9 @@ resources:
 # service discovery eureka/consul
 
 patchesJson6902:
+
+secretGenerator:
+  - name: regcred
+
+vars:
+  - name: DOCKER_REGISTRY_CREDS
