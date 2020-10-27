@@ -39,4 +39,4 @@ jobs:
             - name: Configure kubectl
               run: aws eks --region eu-west-1 update-kubeconfig --name test-anthony
             - name: Deploy to eks
-              run: ./kubectl-apply.sh
+              run: ./kubectl-apply.sh -f
