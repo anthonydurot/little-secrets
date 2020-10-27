@@ -36,6 +36,12 @@ jobs:
                   GIT_TAG=:${GITHUB_REF#refs/tags/}
                   DOCKER_TAG=${GIT_TAG#:refs/heads/master}
                   ./mvnw -ntp jib:build -Djib.to.image=ghcr.io/anthonydurot/little-secrets/little-secrets:latest -Djib.to.auth.username="${{ github.actor }}" -Djib.to.auth.password="${{ secrets.CR_PAT }}"
+
+            - uses: azure/setup-kubectl@v1
+              name: setup kubectl
+              with:
+                version: 'latest' # default is latest stable
+              id: install
             - name: Configure kubectl
               run: aws eks --region eu-west-1 update-kubeconfig --name test-anthony
             - name: Deploy to eks
