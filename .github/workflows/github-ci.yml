@@ -20,8 +20,6 @@ jobs:
             - uses: actions/setup-java@v1
               with:
                   java-version: '11.x'
-            - name: Stop MySQL server
-              run: sudo /etc/init.d/mysql stop
             - name: Install node.js packages
               run: npm install
             - name: Run backend test
