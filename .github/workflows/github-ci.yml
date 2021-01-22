@@ -50,11 +50,6 @@ jobs:
                   kubectl apply -f namespace.yml --kubeconfig /root/.kube/config
                   kubectl apply -f littlesecrets-k8s/ --kubeconfig /root/.kube/config
             
-            - name : Terraform plan
-
-            - name : Push Terraform summary
-              run : 
-
             # - name: Deploy k8s yaml
             #   id: deploy-k8s-yaml
             #   env:
