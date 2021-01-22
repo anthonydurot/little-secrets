@@ -45,7 +45,6 @@ jobs:
 
             - name: Deploy to eks
               run: |
-                  aws sts get-caller-identity
                   aws eks --region eu-west-1 update-kubeconfig --name anthony-test
                   kubectl config use-context arn:aws:eks:eu-west-1:448878779811:cluster/anthony-test --kubeconfig /root/.kube/config
                   kubectl apply -f namespace.yml --kubeconfig /root/.kube/config
